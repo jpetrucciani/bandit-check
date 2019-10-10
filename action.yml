@@ -1,0 +1,20 @@
+# action.yml
+name: 'Bandit Check'
+description: 'GitHub action to lint your python code with bandit'
+branding:
+  icon: 'shield'
+  color: 'blue'
+inputs:
+  path:
+    description: 'File or directory to run bandit on'
+    required: false
+    default: '.'
+outputs:
+  output:
+    description: 'The output of bandit'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.path }}
+    - ${{ inputs.disable }}
