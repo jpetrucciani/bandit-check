@@ -7,7 +7,7 @@ Make sure you have a `.bandit` file at the root of your repository!
 
 ### `path`
 
-**Required** The path to run bandit on
+**Optional** The path to run bandit on
 
 **Default** `"."`
 
