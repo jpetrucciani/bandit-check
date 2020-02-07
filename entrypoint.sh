@@ -2,4 +2,4 @@
 set -eax
 
 bandit --version
-bandit -r "$1"
+bandit -r $1
