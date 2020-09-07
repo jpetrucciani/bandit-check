@@ -11,6 +11,10 @@ Make sure you have a `.bandit` file at the root of your repository!
 
 **Default** `"."`
 
+**Optional** Optional Bandit flags (refer to `handit --help`)
+
+**Default** `""`
+
 ## Outputs
 
 None
@@ -20,8 +24,13 @@ None
 ```yaml
 uses: jpetrucciani/bandit-check@master
 
-# or specify a path!
+# specify a path
 uses: jpetrucciani/bandit-check@master
 with:
   path: '.'
+
+# provide some flags
+uses: jpetrucciani/bandit-check@master
+with:
+  bandit_flags: '-lll -o output.json -f json'
 ```
