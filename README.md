@@ -1,4 +1,5 @@
 # bandit-check
+
 GitHub Action for [bandit](https://github.com/PyCQA/bandit) python security linter
 
 Make sure you have a `.bandit` file at the root of your repository!
