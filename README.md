@@ -12,7 +12,7 @@ Make sure you have a `.bandit` file at the root of your repository!
 
 **Default** `"."`
 
-**Optional** Optional Bandit flags (refer to `handit --help`)
+**Optional** Optional Bandit flags (refer to `bandit --help`)
 
 **Default** `""`
 
