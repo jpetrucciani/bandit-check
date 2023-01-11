@@ -13,10 +13,8 @@ jobs:
         with:
           python-version: '3.9'
           architecture: x64
-      - name: check version
-        run: |
-          pip install -U bandit
-          pip freeze | grep 'bandit==' >requirements.txt
+      - name: Install bandit latest known version
+        run: pip install -r requirements.txt
       - uses: peter-evans/create-pull-request@v3.10.0
         id: new_pull_request
         with:
