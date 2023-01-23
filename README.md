@@ -12,6 +12,8 @@ Make sure you have a `.bandit` file at the root of your repository!
 
 **Default** `"."`
 
+### `bandit_flags`
+
 **Optional** Optional Bandit flags (refer to `bandit --help`)
 
 **Default** `""`
@@ -23,15 +25,15 @@ None
 ## Example usage
 
 ```yaml
-uses: jpetrucciani/bandit-check@master
+uses: jpetrucciani/bandit-check@main
 
 # specify a path
-uses: jpetrucciani/bandit-check@master
+uses: jpetrucciani/bandit-check@main
 with:
   path: '.'
 
 # provide some flags
-uses: jpetrucciani/bandit-check@master
+uses: jpetrucciani/bandit-check@main
 with:
   bandit_flags: '-lll -o output.json -f json'
 ```
