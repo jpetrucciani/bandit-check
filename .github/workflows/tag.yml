@@ -25,4 +25,4 @@ jobs:
           git config --global user.name 'jacobi petrucciani'
           git config --global user.email 'jpetrucciani@users.noreply.github.com'
           git tag -a "$VERSION" -m "$VERSION"
-          git push --tags
+          git push --tags || true
