@@ -1,2 +1,2 @@
-bandit==1.8.6
+bandit==1.9.1
 bandit_sarif_formatter==1.1.1
